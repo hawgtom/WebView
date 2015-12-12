@@ -13,6 +13,9 @@
 		B2F302DE1C1BE52D007001B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F302DC1C1BE52D007001B8 /* Main.storyboard */; };
 		B2F302E01C1BE52D007001B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F302DF1C1BE52D007001B8 /* Assets.xcassets */; };
 		B2F302E31C1BE52D007001B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F302E11C1BE52D007001B8 /* LaunchScreen.storyboard */; };
+		B2F302EB1C1C31B7007001B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F302EA1C1C31B7007001B8 /* UIKit.framework */; };
+		B2F302ED1C1C31C3007001B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F302EC1C1C31C3007001B8 /* Foundation.framework */; };
+		B2F302EF1C1C31CF007001B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F302EE1C1C31CF007001B8 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B2F302DF1C1BE52D007001B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F302E21C1BE52D007001B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F302E41C1BE52D007001B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F302EA1C1C31B7007001B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B2F302EC1C1C31C3007001B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B2F302EE1C1C31CF007001B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F302EF1C1C31CF007001B8 /* CoreGraphics.framework in Frameworks */,
+				B2F302ED1C1C31C3007001B8 /* Foundation.framework in Frameworks */,
+				B2F302EB1C1C31B7007001B8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,9 @@
 		B2F302C71C1BE52D007001B8 = {
 			isa = PBXGroup;
 			children = (
+				B2F302EE1C1C31CF007001B8 /* CoreGraphics.framework */,
+				B2F302EC1C1C31C3007001B8 /* Foundation.framework */,
+				B2F302EA1C1C31B7007001B8 /* UIKit.framework */,
 				B2F302D21C1BE52D007001B8 /* WebView */,
 				B2F302D11C1BE52D007001B8 /* Products */,
 			);
@@ -264,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = WebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.columbus.WebView;
@@ -275,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = WebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.columbus.WebView;
@@ -301,6 +315,7 @@
 				B2F302E91C1BE52D007001B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

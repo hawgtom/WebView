@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate,UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+- (IBAction)goButton:(UIButton *)sender;
 
-
+@property (strong, nonatomic) IBOutlet UITextField *urlText;
+- (IBAction)backtap:(id)sender;
 @end
 
