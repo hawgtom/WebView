@@ -34,6 +34,7 @@
     [load release];
     [super dealloc];
 }
+//////////////////Button Submit to Load URL
 - (IBAction)goButton:(UIButton *)sender {
     
     NSString* urlString = self.urlText.text;
@@ -47,6 +48,7 @@
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }
+////////Keyboard Funtions For Hiding
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
@@ -54,16 +56,18 @@
 - (IBAction)backtap:(id)sender {
     [self.urlText endEditing:YES];
 }
-
+///////Webview Loading Listner
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSLog(@"Hai");
     return YES;
 }
+//////Capturing the Start URL
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     start=[webView stringByEvaluatingJavaScriptFromString:@"document.domain"];
 }
+//////Capturing The Loaded URL
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
     load=[webView stringByEvaluatingJavaScriptFromString:@"document.domain"];
